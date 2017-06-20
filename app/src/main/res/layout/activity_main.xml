@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.movie.chang.cardview.MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_card_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:maxHeight="200dp"
+        app:cardBackgroundColor="@android:color/holo_orange_light"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Hello World!"/>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/cus_ripple"
+        android:clickable="true"
+        android:gravity="bottom"
+        android:text="elevation"/>
+
+    <SeekBar
+        android:id="@+id/cardview_seekbar_elevation_sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="radius"/>
+
+    <SeekBar
+        android:id="@+id/cardview_seekbar_radius_sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_card_with_image_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@android:color/holo_orange_light"
+        app:cardCornerRadius="8dp"
+        app:cardPreventCornerOverlap="false">
+
+        <com.movie.chang.cardview.UpRoundImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radius"
+            android:scaleType="centerCrop"
+            android:src="@drawable/meizi"/>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
